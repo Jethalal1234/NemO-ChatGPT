@@ -10,7 +10,7 @@ const client = new Client({
     ]
 });
 
-//Setting Up OpenAi
+//Setting Up OpenAI
 
 const {Configuration, OpenAIApi} = require("openai");
 
