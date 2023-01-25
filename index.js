@@ -31,11 +31,11 @@ client.on('messageCreate', async function(message){
         const response = await openai.createCompletion({
             model: "text-davinci-003",
             prompt: `Hey Give Me a response for this : ${message.content}`,
-            temperature: 0.5,
-            max_tokens: 60,
-            top_p: 1.0,
-            frequency_penalty: 0.5,
-            presence_penalty: 0.0,
+            temperature: 0.9,
+            max_tokens: 150,
+            top_p: 1,
+            frequency_penalty: 0.0,
+            presence_penalty: 0.6,
           });
 
           message.channel.send(`${response.data.choices[0].text}`)
