@@ -1,0 +1,16 @@
+{
+  "name": "nemo-chatgpt",
+  "version": "1.0.0",
+  "description": "Add GPT in Discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "gpt"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3",
+    "openai": "^3.1.0"
+  }
+}
