@@ -10,7 +10,7 @@ const client = new Client({
     ]
 });
 
-//Setting Up OpenAI
+//Setting Up OpenAi
 
 const {Configuration, OpenAIApi} = require("openai");
 
@@ -38,7 +38,7 @@ client.on('messageCreate', async function(message){
             presence_penalty: 0.6,
           });
 
-          message.channel.send(`${response.data.choices[0].text}`)
+          message.channel.reply(`${response.data.choices[0].text}`)
 
     } catch (error) {
         console.log(error)
