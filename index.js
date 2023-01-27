@@ -38,7 +38,7 @@ client.on('messageCreate', async function(message){
             presence_penalty: 0.6,
           });
 
-          message.channel.reply(`${response.data.choices[0].text}`)
+          message.reply(`${response.data.choices[0].text}`)
 
     } catch (error) {
         console.log(error)
