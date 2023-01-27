@@ -46,4 +46,6 @@ client.on('messageCreate', async function(message){
     }
 })
 
+//LOGIN
+
 client.login(process.env.DISCORD_KEY);
